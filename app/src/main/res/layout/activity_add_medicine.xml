@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C91FB25F">
+
+    <CheckBox
+        android:id="@+id/sunCheckBox"
+        android:layout_width="59dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="252dp"
+        android:text="Sun"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/medcineNameEditText"
+        android:layout_width="406dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:background="#136F77"
+        android:ems="10"
+        android:hint="medicine's name"
+        android:inputType="textPersonName"
+        android:textColor="#F1EAEA"
+        android:textColorHighlight="#F8F5F5"
+        android:textColorHint="#F1ECEC"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dosagesEditText"
+        android:layout_width="406dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="84dp"
+        android:background="#136F77"
+        android:ems="10"
+        android:hint="dosages"
+        android:inputType="textPersonName"
+        android:textColor="#F3F1F1"
+        android:textColorHint="#EAE2E2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/dosagesPerOneTimeEditText"
+        android:layout_width="406dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="168dp"
+        android:background="#136F77"
+        android:hint="dosages per one time"
+        android:inputType="textPersonName"
+        android:textColor="#F4F2F2"
+        android:textColorHint="#FBF7F7"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/monCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="252dp"
+        android:text="Mon"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/sunCheckBox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/tueCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="252dp"
+        android:text="Tue"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/monCheckBox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/friCheckBox"
+        android:layout_width="58dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="324dp"
+        android:text="Fri"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/thuCheckBox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/thuCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="328dp"
+        android:text="Thu"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/satCheckBox"
+        android:layout_width="61dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="324dp"
+        android:text="Sat"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/friCheckBox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/wedCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="252dp"
+        android:text="Wed"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tueCheckBox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="406dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="392dp"
+        android:background="#136F77"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="textPersonName"
+        android:textColor="#F8F4F4"
+        android:textColorHint="#F8EEEE"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/expiredEditTextDate"
+        android:layout_width="410dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="440dp"
+        android:background="#136F77"
+        android:ems="10"
+        android:hint="expired date"
+        android:inputType="date"
+        android:textColor="#F8F2F2"
+        android:textColorHint="#FBF6F6"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addMedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="536dp"
+        android:background="@drawable/my_button"
+        android:backgroundTint="#8FDDDF"
+        android:text="Add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

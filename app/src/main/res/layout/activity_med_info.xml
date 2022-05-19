@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C91FB25F"
+    tools:context=".MedInfoActivity">
+
+    <TextView
+        android:id="@+id/remainTextView"
+        android:layout_width="347dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:background="#136F77"
+        android:text="Remain"
+        android:textColor="#FAF7F7"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dosageTextView" />
+
+    <TextView
+        android:id="@+id/dayToTakeTextView"
+        android:layout_width="345dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:background="#136F77"
+        android:text="Day to take"
+        android:textColor="#FAF6F6"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeToTakeTextView" />
+
+    <TextView
+        android:id="@+id/timeToTakeTextView"
+        android:layout_width="345dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:background="#136F77"
+        android:text="Time to take"
+        android:textColor="#F8F4F4"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expiredTextView" />
+
+    <TextView
+        android:id="@+id/dosageTextView"
+        android:layout_width="344dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:background="#136F77"
+        android:text="Dosage"
+        android:textColor="#F6F1F1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dayToTakeTextView" />
+
+    <TextView
+        android:id="@+id/medNameTextView"
+        android:layout_width="171dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:background="#136F77"
+        android:text="MedName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/expiredTextView"
+        android:layout_width="347dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:background="#136F77"
+        android:text="Expired Date"
+        android:textColor="#FAF7F7"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medNameTextView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/deleteMedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/my_button"
+        android:backgroundTint="#8FDDDF"
+        android:text="Delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="632dp"
+        android:background="@drawable/my_button"
+        android:backgroundTint="#8FDDDF"
+        android:text="update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/updateExpiredEdit"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="72dp"
+        android:background="#136F77"
+        android:ems="10"
+        android:hint="update expired"
+        android:inputType="textPersonName"
+        android:textColor="#FDF7F7"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remainTextView" />
+
+    <EditText
+        android:id="@+id/updateRemainEdit"
+        android:layout_width="187dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="140dp"
+        android:background="#136F77"
+        android:ems="10"
+        android:hint="update Remain Value"
+        android:inputType="textPersonName"
+        android:textColor="#FFFCFC"
+        android:textColorHint="#FAFAFA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remainTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
